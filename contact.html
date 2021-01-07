@@ -9,7 +9,8 @@
         <meta content="" name="keywords">
       
         <!-- Favicons -->
-        <!-- <link href="assets/imgs/favicon.png" rel="icon">-->
+        <!-- <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
       
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -20,6 +21,8 @@
         <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
         <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
         <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+        <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
       
         <!--   Main CSS File -->
@@ -33,58 +36,52 @@
         <header id="header" class="fixed-top">
           <div class="container d-flex align-items-center">
       
+            <!-- <h1 class="logo mr-auto"><a href="index.html"><span>Com</span>pany</a></h1> -->
             <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo.png" alt="" class="img-fluid"></a>
       
             <nav class="nav-menu d-none d-lg-block">
               <ul>
-                <li><a href="index.html">Home</a></li>
+                <li ><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li class="drop-down"><a href="#">Products</a>
+                <li class="drop-down"><a href="product.html">Products</a>
                   <ul>
-                    <li><a href="product.html">Product Page</a></li>
-                    <li><a href="#">Syringes</a></li>
-                    <li class="drop-down"><a href="#">Extended drop down</a>
+                    <li><a href="product.html">Disposable Syringes</a></li>
+                    <!-- Uncomment below code for drop-down menu -->
+                    <!-- <li class="drop-down"><a href="#">Disposable Syringes</a>
                       <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                      </ul>
+                        <li><a href="#">2mL</a></li>
+                        <li><a href="#">3mL</a></li>
+                        <li><a href="#">5mL</a></li>
+                        <li><a href="#">10mL</a></li>
+                        
+                      </ul> -->
                     </li>
                   </ul>
                 </li>
-                <li  class="active"><a href="contact.html">Contact</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-      
+                <li class="active"><a href="contact.html">Contact</a></li>
+               <!-- <li>
+                <a href="#"><img src="assets/imgs/v4l.jpg" alt="" class="img-fluid"></a>
+              </li>  -->
               </ul>
             </nav><!-- .nav-menu -->
       
           </div>
         </header><!-- End Header -->
 
+
         <main id="main">
 
-          <!--  Breadcrumbs  -->
-          <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container">
-      
-              <div class="d-flex justify-content-between align-items-center">
-                <h2>Contact</h2>
-                <ol>
-                  <li><a href="index.html">Home</a></li>
-                  <li>Contact</li>
-                </ol>
-              </div>
-      
-            </div>
-          </section><!-- End Breadcrumbs -->
       
           <!--  Contact Section  -->
           <div class="map-section">
+            <br>
+            <br>
+            <br>
            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7190.6347898243475!2d85.24222079065035!3d25.693913266834954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5dee800c419f%3A0x8a4879a0c64375bf!2sOne%20Touch!5e0!3m2!1sen!2sin!4v1608784037055!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
           </div>
       
           <section id="contact" class="contact">
-            <div class="container">
+            <div class="container" >
       
               <div class="row justify-content-center" data-aos="fade-up">
       
@@ -122,6 +119,54 @@
             </div>
           </section><!-- End Contact Section -->
       
+                <!--  Feedback Section  -->
+               
+            
+                <section id="contact" class="contact">
+                  <div style="text-align: center;"><h4>Send Us A Message</h4>
+                    Get in touch with us for price quotes, products and other details
+                  </div>
+                    <div class="row mt-5 justify-content-center" data-aos="fade-up">
+                      
+                      <div class="col-lg-10">
+                        
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                          
+                          <div class="form-row">
+                            <div class="col-md-6 form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name*" data-rule="minlen:4" data-msg="This field is required" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*" data-rule="email" data-msg="Please enter a valid email address" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*" data-rule="minlen:10" data-msg="This field is required" />
+                            <div class="validate"></div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject*" data-rule="minlen:4" data-msg="This field is required" />
+                            <div class="validate"></div>
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Enter a message" placeholder="Message"></textarea>
+                            <div class="validate"></div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+                </section><!-- End Feedback Section -->
         </main><!-- End #main -->
       
 
@@ -134,33 +179,46 @@
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/venobox/venobox.min.js"></script>
 <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
 
 <!--   Main JS File -->
 <script src="assets/js/main.js"></script>
 
+<!--  Footer  -->
 <footer id="footer">
 
   <div class="footer-top">
     <div class="container">
-      <div class="row">
+      <img class="footer-logo" src="assets/imgs/logo_tiny.png" alt="company-logo">
 
+      <div class="row">
         <div class="col-lg-3 col-md-6 footer-contact">
-          <div class="title" style="font-size: 36px; margin-top: -18px;">Touch Ine</div>
-          <br>
+          <h4>Address</h4>
           <p>
             <strong>Office:</strong>
             2H/81, Bahadurpur Housing Colony, Kankarbagh, Patna - 800 026
-            <br>Mobile: +91 94309 64293<br>
+            <br>
             <br>
             <strong>Works:</strong>
             A-2(P), Industrial Area, Hajipur, Vaishali - 844 101
-            <br>Mobile: +91 99054 80658, 62879 99279 <br><br>
-            <strong>Email:</strong>rrmedicalindia@yahoo.in<br>    contact-us@rrmedical.in<br>
           </p>
         </div>
 
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact</h4>
+          <p class= "get-in-touch">
+            <strong>Office:</strong>&nbsp;+91 94309 64293</p>
+            <br>              
+            <p class= "get-in-touch">
+            <strong>Works:</strong>&nbsp;+91 99054 80658<br>&nbsp;+91 62879 99279<br>
+          </p>
+       <br>
+      <p class = "get-in-touch"><strong>Email:</strong>&nbsp contact-us@rrmedical.in<br>&nbsp; rrmedicalindia@yahoo.in<br></p>
+        </div>
+
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Navigation</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
@@ -169,36 +227,38 @@
           </ul>
         </div>
 
+
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Products</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Syringe 1</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Syringe 2</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Syringe 3</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Pfizer Vaccine</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Covid Vaccine</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="product.html">Disposable Syringes</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="product.html#2ml">2mL</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="product.html#3ml">3mL</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="product.html#5ml">5mL</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="product.html#10ml">10mL</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
+       
+        <!-- <div class="col-lg-3 col-md-6 footer-links">
           <h4>Stay in Touch</h4>
-          <p>Stay updated with the latest news about us!</p>
-
-          <div class="social-links mt-3">
-            <a href="twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          </div>
-      </div>
-      <!-- <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Vocal For Local</h4>
+          <p>
+            <strong>Office:</strong>
+            2H/81, Bahadurpur Housing Colony, Kankarbagh, Patna - 800 026
+            <br>Mobile: +91 94309 64293<br>
+            <br>
+            <strong>Works:</strong>
+            A-2(P), Industrial Area, Hajipur, Vaishali - 844 101
+            <br>Mobile: +91 99054 80658, 62879 99279 <br><br>
+          </p>
+           <p style="display: flex;"><strong>Email:</strong>&nbsp contact-us@rrmedical.in<br>&nbsp rrmedicalindia@yahoo.in<br></p>
+           <h4>Vocal For Local</h4>
         <p>At Touch Ine we are committed to<br>Hon. PM Narenda Modi's<br><strong>'Aatma Nirbhar Bharat'</strong> initiative<br> and are<strong> Vocal for Local!</strong></p>
         <div class="vocal-for-local">
           <img src="assets/imgs/v4l.jpg" alt="" class="img-fluid"></a>
-        </div>
-      </div> -->
-
+        </div> -->
+      </div>  
+      </div>
       </div>
     </div>
   </div>
@@ -206,14 +266,12 @@
   <div class="container py-4">
     <div class="copyright">
 
-      Copyright &copy;2020<span> <div class="parent-title"><strong><span>R R Medical Enterprises (P) Limited</strong></div></span>  All Rights Reserved
+      Copyright &copy;2021<span> <div class="parent-title"><strong><span>R R Medical Enterprises (P) Limited.</strong></div></span>  All Rights Reserved
 
     </div>
    
   </div>
 </footer><!-- End Footer -->
-
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
     </body>
 </html>
